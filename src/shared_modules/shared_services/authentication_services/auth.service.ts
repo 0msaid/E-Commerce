@@ -9,8 +9,8 @@ import { userLogin } from 'src/shared_modules/shared/classes/user-login';
 })
 export class AuthService {
   constructor(private http: HttpClient) {}
-  urlPost: string = 'https://route-egypt-api.herokuapp.com/signup';
-  urlLogin: string = 'https://route-egypt-api.herokuapp.com/signin';
+  urlPost: string = 'https://route-movies-api.vercel.app/signup';
+  urlLogin: string = 'https://route-movies-api.vercel.app/signin';
 
   addUser(user: userInfo) {
     return this.http.post(this.urlPost, user).pipe(
